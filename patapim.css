@@ -1,0 +1,56 @@
+  body {
+    font-family: "Montserrat";
+    text-align: center;
+  }
+
+  .upper-div {
+    background-color: rgb(78, 208, 255);
+    width: 101.41%;
+    height: 60px;
+    margin-top: -22px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -10px;
+    margin-bottom: -23px;
+  }
+
+  input, button {
+    margin: 5px;
+  }
+
+  input {
+    height: 25px;
+    width: 250px;
+    font-size: 15px;
+    padding-left: 10px;
+    background-color: rgb(223, 223, 223);
+    border: none;
+    outline: none;
+  }
+
+  button {
+    background-color: rgb(78, 84, 255);
+    height: 40px;
+    width: 110px;
+    border: none;
+    border-radius: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+  }
+
+  button:hover {
+    transform: scale(0.93);
+  }
+
+  #imagemlab {
+    border-radius: 15px;
+    width: 400px;
+    height: 200px;
+  }
+
+  #textoerroadd {
+    color: red;
+    font-weight: bold;
+  }
