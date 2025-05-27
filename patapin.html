@@ -1,12 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva de Laboratório</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+      font-family: "Montserrat";
+      text-align: center;
+    }
+
+    .upper-div {
+      background-color: rgb(78, 208, 255);
+      width: 101.41%;
+      height: 60px;
+      margin-top: -22px;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-left: -10px;
+      margin-bottom: -23px;
+    }
+
+    input, button {
+      margin: 5px;
+    }
+
+    input {
+      height: 25px;
+      width: 250px;
+      font-size: 15px;
+      border-radius: 5px;
+      padding-left: 10px;
+      background-color: rgb(223, 223, 223);
+      border: none;
+      outline: none;
+    }
+
+    button {
+      background-color: rgb(78, 84, 255);
+      height: 40px;
+      width: 110px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+    }
+
+    button:hover {
+      transform: scale(0.93);
+    }
+
+    #imagemlab {
+      border-radius: 15px;
+      width: 400px;
+      height: 200px;
+    }
+
+    #textoerroadd {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <h1>bonaldi viado</h1>
-    <h2>leo é vi</h2>
+  <div class="upper-div">
+    <h1 id="title-text">ReserLab</h1>
+  </div>
+
+  <h1>Reservas de Laboratório</h1>
+  <img id="imagemlab" src="https://mbylabsolutions.com/wp-content/uploads/Imagen-1-1-1-scaled.jpg" alt="Laboratório" />
+
+  <form id="formReserva">
+    <br />
+    <label>Professor: <input type="text" id="professor" name="professor" /></label><br /><br />
+    <label>Laboratório: <input type="text" id="lab" name="lab" /></label><br /><br />
+    <label>Horário: <input type="datetime-local" id="dia" name="dia" /></label><br /><br />
+
+    <button id="uso" type="submit">Usar</button>
+    <button id="prioridade" type="button" name="prioridade">Reservar</button>
+    <button id="atender" type="button" name="atender">Cancelar Uso</button>
+
+    <p id="textoerroadd"></p>
+  </form>
+
+  <h3>Laboratórios:</h3>
+  <pre></pre>
+  <span></span>
+
 </body>
 </html>
